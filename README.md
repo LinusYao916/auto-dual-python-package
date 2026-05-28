@@ -56,3 +56,10 @@ deriver.add_constraint(
     print("====== Generated Dual LaTeX ======")
     print(render_dual(result))
 
+#############################################################################################
+Output:
+====== dual LaTeX ======
+\textbf{Maximize}\quad \sum_{i \in I} {b}_{i} {\lambda}_{i}
+\text{subject to:}
+    {\lambda}_{i} \leq {c}_{i},\ \ \forall\, i \in I
+    {\lambda}_{i} \geq 0,\ \ \forall\, i \in I
